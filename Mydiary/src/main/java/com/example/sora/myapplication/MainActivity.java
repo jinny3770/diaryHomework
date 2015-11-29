@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    boolean writeFile(){
+    void writeFile(){
 
         FileOutputStream output;
 
@@ -190,11 +190,11 @@ public class MainActivity extends AppCompatActivity {
             output.close();
             Toast.makeText(this, year+"_"+month+"_"+day+".txt is saved!", Toast.LENGTH_SHORT).show();
             btn.setText("Edit");
-            return true;
+
 
         }catch (IOException e) {
             Toast.makeText(this, "Write Error", Toast.LENGTH_SHORT).show();
-            return false;
+
         }
     }
 

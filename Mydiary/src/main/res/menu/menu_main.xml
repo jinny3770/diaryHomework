@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.sora.myapplication.MainActivity">
+    <item
+        android:id="@+id/reload"
+        android:title="Reload"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Text Size">
+
+        <menu>
+            <group>
+
+                <item
+                    android:id="@+id/small"
+                    android:title="Small"/>
+
+                <item
+                    android:id="@+id/medium"
+                    android:title="Medium"/>
+
+                <item
+                    android:id="@+id/large"
+                    android:title="Large"/>
+
+         </group>
+        </menu>
+    </item>
+</menu>
